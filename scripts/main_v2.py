@@ -65,8 +65,8 @@ SOURCE_URLS = [
   # "https://www.ermao.net/sub/v2ray/ermao.net",
     "https://raw.githubusercontent.com/ishalumi/proxy-node-collector/main/output/nodes_base64.txt",
      "https://gist.githubusercontent.com/shuaidaoya/9e5cf2749c0ce79932dd9229d9b4162b/raw/base64.txt",
-     # "https://raw.githubusercontent.com/PuddinCat/BestClash/main/proxies.yaml",
-    "https://raw.githubusercontent.com/twj0/subseek/refs/heads/master/data/sub_github.txt",
+     "https://raw.githubusercontent.com/PuddinCat/BestClash/main/proxies.yaml",
+    # "https://raw.githubusercontent.com/twj0/subseek/refs/heads/master/data/sub_github.txt",
 ]
 
 OUTPUT_DIR = "output"
