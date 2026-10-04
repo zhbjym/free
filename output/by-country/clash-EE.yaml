@@ -6,16 +6,6 @@ log-level: info
 proxies:
 - name: 🇪🇪 爱沙尼亚 (Estonia) 01 - xiaohe
   server: 94.183.170.135
-  port: 8443
-  udp: true
-  type: vless
-  uuid: 06c4e938-2954-478f-a870-ca1b163e30e9
-  tls: true
-  servername: estproxy4.lockdwn.com
-  skip-cert-verify: false
-  client-fingerprint: chrome
-- name: 🇪🇪 爱沙尼亚 (Estonia) 02 - xiaohe
-  server: 94.183.170.135
   port: 443
   udp: true
   type: vless
@@ -23,28 +13,31 @@ proxies:
   network: ws
   ws-opts:
     path: /
-- name: 🇪🇪 爱沙尼亚 (Estonia) 03 - xiaohe
-  server: 109.206.241.10
-  port: 449
+- name: 🇪🇪 爱沙尼亚 (Estonia) 02 - xiaohe
+  server: 217.60.182.138
+  port: 8843
   udp: true
-  type: trojan
-  password: oiiaB38ywjEHCWRs_O_a_1113_Il_KeyyyHop_Bes1
-  sni: 109.206.241.10
-  skip-cert-verify: true
-- name: 🇪🇪 爱沙尼亚 (Estonia) 04 - xiaohe
-  server: 77.72.85.247
+  type: vless
+  uuid: 6e631ab5-9666-43c0-849a-5c8a364dc83a
+  tls: true
+  reality-opts:
+    public-key: XD-GOGR9K3rGRCfpytDaJZmtXOr7ZO6OdczpjUE0Dh8
+    short-id: a4f8c92d
+  servername: myschoolonline.cvedcmimikal.space
+  client-fingerprint: firefox
+  network: grpc
+  grpc-opts:
+    grpc-service-name: 46205b
+- name: 🇪🇪 爱沙尼亚 (Estonia) 03 - xiaohe
+  server: 94.183.170.135
   port: 8443
   udp: true
   type: vless
-  uuid: 6c713691-3ca2-4446-ad25-113d1bed6b03
+  uuid: 06c4e938-2954-478f-a870-ca1b163e30e9
   tls: true
-  servername: fdghyt.com
+  servername: estproxy4.lockdwn.com
   skip-cert-verify: false
-  network: ws
-  ws-opts:
-    path: /vpn-wss/fluxor/59011/
-    headers:
-      Host: fdghyt.com
+  client-fingerprint: firefox
 proxy-groups:
 - name: PROXIES
   type: select
@@ -53,7 +46,6 @@ proxy-groups:
   - 🇪🇪 爱沙尼亚 (Estonia) 01 - xiaohe
   - 🇪🇪 爱沙尼亚 (Estonia) 02 - xiaohe
   - 🇪🇪 爱沙尼亚 (Estonia) 03 - xiaohe
-  - 🇪🇪 爱沙尼亚 (Estonia) 04 - xiaohe
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
@@ -62,6 +54,5 @@ proxy-groups:
   - 🇪🇪 爱沙尼亚 (Estonia) 01 - xiaohe
   - 🇪🇪 爱沙尼亚 (Estonia) 02 - xiaohe
   - 🇪🇪 爱沙尼亚 (Estonia) 03 - xiaohe
-  - 🇪🇪 爱沙尼亚 (Estonia) 04 - xiaohe
 rules:
 - MATCH,PROXIES
