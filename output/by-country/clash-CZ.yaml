@@ -4,24 +4,26 @@ allow-lan: true
 mode: rule
 log-level: info
 proxies:
-- name: 🇲🇽 墨西哥 (Mexico) 01 - xiaohe
-  server: 64.177.90.30
-  port: 8388
+- name: 🇨🇿 捷克 (Czech) 01 - xiaohe
+  server: 194.87.59.27
+  port: 2085
   udp: true
-  type: ss
-  cipher: aes-256-gcm
-  password: BWyPPTusFKhGgzKh
+  type: vless
+  uuid: 755d2e25-9b0c-41ae-a27c-bd45318c7a4f
+  network: grpc
+  grpc-opts:
+    grpc-service-name: vless
 proxy-groups:
 - name: PROXIES
   type: select
   proxies:
   - AUTO
-  - 🇲🇽 墨西哥 (Mexico) 01 - xiaohe
+  - 🇨🇿 捷克 (Czech) 01 - xiaohe
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
   interval: 300
   proxies:
-  - 🇲🇽 墨西哥 (Mexico) 01 - xiaohe
+  - 🇨🇿 捷克 (Czech) 01 - xiaohe
 rules:
 - MATCH,PROXIES

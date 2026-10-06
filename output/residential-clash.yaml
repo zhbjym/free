@@ -13,13 +13,38 @@ proxies:
   tls: true
   servername: argo6.5671234.xyz
   skip-cert-verify: false
+  client-fingerprint: chrome
   network: ws
   ws-opts:
     path: /e8e2cecb6188f7fb
     headers:
       Host: argo6.5671234.xyz
-- name: 🇹🇼 中国台湾 (Taiwan) 02 (家宽) - xiaohe
-  server: 118.167.235.241
+- name: 🇦🇹 奥地利 (Austria) 02 (家宽) - xiaohe
+  server: 31.77.227.6
+  port: 52006
+  udp: true
+  type: vless
+  uuid: bc659d88-a1e0-076c-a49a-7b51b26a7a7f
+  flow: xtls-rprx-vision
+  tls: true
+  servername: bigdick.gamegrow.ru
+  skip-cert-verify: false
+- name: 🇹🇼 中国台湾 (Taiwan) 03 (家宽) - xiaohe
+  server: sbgfgov.vip24.wogacnmnagfwgov.com
+  port: 11224
+  udp: true
+  type: vmess
+  uuid: 605956ee-544d-308e-8b90-51e67c6ea8da
+  alterId: 2
+  cipher: auto
+- name: 🇹🇷 土耳其 (Turkey) 04 (移动家宽) - xiaohe
+  server: test.keoplentuio.xyz
+  port: 2053
+  udp: true
+  type: vless
+  uuid: 9ef61079-6f7d-4911-9608-943da85d8e6f
+- name: 🇹🇼 中国台湾 (Taiwan) 05 (家宽) - xiaohe
+  server: hinet1.2yly.com
   port: 24215
   udp: true
   type: vless
@@ -28,38 +53,26 @@ proxies:
   reality-opts:
     public-key: mdWKUPMVTtTbDqK10BPb89OcqBC2-Lx-4NOYtqc1GWE
   servername: addons.mozilla.org
-  client-fingerprint: qq
-- name: 🇹🇷 土耳其 (Turkey) 03 (移动家宽) - xiaohe
-  server: test.keoplentuio.xyz
-  port: 2053
-  udp: true
-  type: vless
-  uuid: 9ef61079-6f7d-4911-9608-943da85d8e6f
-- name: 🇹🇼 中国台湾 (Taiwan) 04 (家宽) - xiaohe
-  server: sbgfgov.vip23.wogacnmnagfwgov.com
-  port: 11223
-  udp: true
-  type: vmess
-  uuid: 605956ee-544d-308e-8b90-51e67c6ea8da
-  alterId: 2
-  cipher: auto
+  client-fingerprint: chrome
 proxy-groups:
 - name: PROXIES
   type: select
   proxies:
   - AUTO
   - 🇹🇼 中国台湾 (Taiwan) 01 (家宽) - xiaohe
-  - 🇹🇼 中国台湾 (Taiwan) 02 (家宽) - xiaohe
-  - 🇹🇷 土耳其 (Turkey) 03 (移动家宽) - xiaohe
-  - 🇹🇼 中国台湾 (Taiwan) 04 (家宽) - xiaohe
+  - 🇦🇹 奥地利 (Austria) 02 (家宽) - xiaohe
+  - 🇹🇼 中国台湾 (Taiwan) 03 (家宽) - xiaohe
+  - 🇹🇷 土耳其 (Turkey) 04 (移动家宽) - xiaohe
+  - 🇹🇼 中国台湾 (Taiwan) 05 (家宽) - xiaohe
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
   interval: 300
   proxies:
   - 🇹🇼 中国台湾 (Taiwan) 01 (家宽) - xiaohe
-  - 🇹🇼 中国台湾 (Taiwan) 02 (家宽) - xiaohe
-  - 🇹🇷 土耳其 (Turkey) 03 (移动家宽) - xiaohe
-  - 🇹🇼 中国台湾 (Taiwan) 04 (家宽) - xiaohe
+  - 🇦🇹 奥地利 (Austria) 02 (家宽) - xiaohe
+  - 🇹🇼 中国台湾 (Taiwan) 03 (家宽) - xiaohe
+  - 🇹🇷 土耳其 (Turkey) 04 (移动家宽) - xiaohe
+  - 🇹🇼 中国台湾 (Taiwan) 05 (家宽) - xiaohe
 rules:
 - MATCH,PROXIES

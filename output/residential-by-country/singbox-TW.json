@@ -12,7 +12,11 @@
       "tls": {
         "enabled": true,
         "server_name": "argo6.5671234.xyz",
-        "insecure": false
+        "insecure": false,
+        "utls": {
+          "enabled": true,
+          "fingerprint": "chrome"
+        }
       },
       "transport": {
         "type": "ws",
@@ -23,9 +27,18 @@
       }
     },
     {
-      "type": "vless",
+      "type": "vmess",
       "tag": "🇹🇼 中国台湾 (Taiwan) 02 (家宽) - xiaohe",
-      "server": "118.167.235.241",
+      "server": "sbgfgov.vip24.wogacnmnagfwgov.com",
+      "server_port": 11224,
+      "uuid": "605956ee-544d-308e-8b90-51e67c6ea8da",
+      "security": "auto",
+      "alter_id": 2
+    },
+    {
+      "type": "vless",
+      "tag": "🇹🇼 中国台湾 (Taiwan) 03 (家宽) - xiaohe",
+      "server": "hinet1.2yly.com",
       "server_port": 24215,
       "uuid": "19d5a678-8396-4e3b-93da-ece618d0e83a",
       "tls": {
@@ -33,7 +46,7 @@
         "server_name": "addons.mozilla.org",
         "utls": {
           "enabled": true,
-          "fingerprint": "qq"
+          "fingerprint": "chrome"
         },
         "reality": {
           "enabled": true,
@@ -41,15 +54,6 @@
           "short_id": ""
         }
       }
-    },
-    {
-      "type": "vmess",
-      "tag": "🇹🇼 中国台湾 (Taiwan) 03 (家宽) - xiaohe",
-      "server": "sbgfgov.vip23.wogacnmnagfwgov.com",
-      "server_port": 11223,
-      "uuid": "605956ee-544d-308e-8b90-51e67c6ea8da",
-      "security": "auto",
-      "alter_id": 2
     },
     {
       "type": "selector",
